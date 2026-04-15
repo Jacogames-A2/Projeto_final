@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bfaptmyppwljm"]
+
+[ext_resource type="Script" uid="uid://b2hdif6gh36pg" path="res://Scripts/Personagens/base_personagem.gd" id="1_8fnuf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftowp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_impxo"]
+
+[node name="Base_Personagem" type="CharacterBody2D" unique_id=392678702]
+script = ExtResource("1_8fnuf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1942025711]
+shape = SubResource("RectangleShape2D_ftowp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=427898382]
+sprite_frames = SubResource("SpriteFrames_impxo")
